@@ -1,7 +1,18 @@
 const menuToggleRef = document.querySelector('.toggle');
 const navRef = document.querySelector('nav');
 const navItemRefs = document.querySelectorAll('nav a');
+// const headingRef = document.querySelector('h1');
 let isMenuOpen = false;
+// let isHeadingUp = false;
+
+// headingRef.addEventListener('click', () => {
+//     if(isHeadingUp) {
+//         toggleHeading('reverse');
+//     } else {
+//         toggleHeading('normal');
+//     }
+//     isHeadingUp = !isHeadingUp;
+// });
 
 menuToggleRef.addEventListener('click', () => {
     if(isMenuOpen) {
@@ -70,3 +81,26 @@ function showMenu() {
         delay: anime.stagger(200)
     });
 }
+
+// function toggleHeading(direction) {
+//     const timeline = anime.timeline({
+//         easing: 'easeInOutQuad',
+//         direction: direction
+//     });
+
+//     timeline.add({
+//         targets: headingRef,
+//         translateY: 0,
+//         color: '#000'
+//     })
+//     .add({
+//         targets: headingRef,
+//         translateY: '-4rem',
+//         color: '#000'
+//     })
+//     .add({
+//         targets: headingRef,
+//         translateY: '-4rem',
+//         color: '#ff0000'
+//     });
+// }
